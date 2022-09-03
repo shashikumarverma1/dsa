@@ -1,0 +1,669 @@
+
+Amy and Array
+AMY AND ARRAY
+
+Problem Statement
+
+Amy has an array A, of N integers. In one operation she can select any element of the array and decrease it by 1 such that the resultant number is non-negative.
+
+She wants to make her array such that for each index K (1<=K<=N), following must hold for all the indices X (1<=X<K) less than it:
+
+· Either AX = 0 or,
+
+· AX < AK
+
+Find the minimum number of operations required to make her array as she wants.
+
+You are given T independent test cases.
+
+Constraints
+
+1 <= T <= 5
+1 <= N <= 105
+1 <= AK <= 109
+All input values are integers.
+Input Format
+
+First-line contains T.
+First line of each test case consists of a single integer N.
+Second line of each test case consists of N space separated integers denoting the array A.
+Output Format
+
+Print in in a newline for each test case single integer denoting the minimum number of operations required to make her array as she wants.
+Sample Input 1
+
+2
+
+5
+
+1 1 9 17 19
+
+2
+
+1 2
+
+Sample Output 1
+
+1
+
+0
+
+Explanation of Sample 1
+
+
+
+For 1st test case, she selects the first element and decrease it by 1. So array becomes [0,1,9,17, 19]
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+Problem Statement
+
+ 
+
+There are N cities named 1 to N. Given an integer array H representing the Happiness Index of a city, any city i (1<=i<=N) has a Happiness Index H[i].
+
+The following operation can be performed any number of times.
+
+Choose any two adjacent cities and multiply their respective Happiness Index with -1. The cities are considered adjacent cities if they share borders.
+
+An evil invader has plans to minimize the total Happiness Index. (Total Happiness Index is the sum of the Happiness Index of all the cities). What is the minimum happiness index that can be achieved by the invader?
+
+ 
+
+Input Format:
+
+ 
+
+The first line contains an integer T denoting the number of test cases
+
+The first line of each test case contains an integer denoting N
+
+The next line of each test case contains N space space-separated integers denoting H[i](1<=i<=N)
+
+ 
+
+Output Format
+
+ 
+
+Print an integer denoting the minimum happiness index that can be achieved by the invader
+
+ 
+
+Constraints
+
+ 
+
+1<=T<=10
+
+1<=N<=10^5
+
+-10^9<=H[i]<=10^9
+
+Time limit: 1sec
+
+ 
+
+Sample Input
+
+ 
+
+1
+
+5
+
+-1 2 3 4 5
+
+ 
+
+Sample Output
+
+ 
+
+-15
+
+ 
+
+Explanation
+
+ 
+
+Choose cities 2 and 3 and multiply the happiness index by -1, So the happiness index becomes -1 -2 -3 4 5
+
+Choose cities 4 and 5 and multiply the happiness index by -1, So the happiness index becomes -1 -2 -3 -4 -5
+
+After these 2 operations the happiness index becomes sum(-1,-2,-3,-4,-5) = -15
+-------------------------------------------------------------------------------------------------------------------------------------------Amy has an array A, of N integers. For a triplet (X, Y, Z) (1<=X<Y<Z<=N), she defines its power as: | AX – AY | * AZ.
+
+She wants to find the maximum possible power that a triplet can have. Since, she is busy, she asked you to help her.
+
+You are given T independent test cases.
+
+
+
+Constraints
+
+
+
+1 <= T <= 10
+3 <= N <= 105
+1 <= Ai <= 109
+All input values are integers.
+
+
+Input Format
+
+
+
+First-line contains T.
+First line of each test case consists of a single integer N.
+Second line of each test case consists of N space separated integers denoting the array A.
+
+
+Output Format
+
+
+
+Print in a newline for each test case a single integer denoting maximum possible power that a triplet can have.
+
+
+Sample Input 1
+
+
+
+1
+
+4
+
+1 2 4 3
+
+
+
+Sample Output 1
+
+
+
+9
+
+
+
+Explanation of Sample 1
+
+
+
+If she choses the triplet (1, 3, 4), then power = | A1 – A3 | * A4 = | 1 – 4 | * 3 = 9
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Problem Statement
+
+
+
+Antonio got a very large integer as his christmas present from his parents. Antonio does not like large integers and hence decided to change a few digits of this integer and make it as small as possible.
+
+But changing too many digits will make Antonio’s parents sad. More formally if Antonio changes more than K digits of the integer, his parents will become sad. Antonio does not want that to happen and hence will change at most K digits of the given integer.
+
+Also if the final integer contains any leading zeroes, Antonio’s parents again become sad. So Antonio will perform the K changes in such a way that the final integer does not contain any leading zeroes.
+
+Given the integer Antonio got and K(maximum number of changes Antonio can perform), print the minimum integer that Antonio can get.
+
+
+
+Input Format
+
+
+
+First line contians a single integer denoting the integer Antonio got as his christmas present.
+Next line contains a single integer denoting K.
+
+
+Output Format
+
+
+
+Print the minimum integer that Antonio can get.
+
+
+Constraints
+
+
+
+1<=number of digits in the integer<=105
+1<=K<=number of digits in the integer
+Its guaranteed that the given integer does not contain any leading zeros.
+
+
+Sample Input 1
+
+
+
+2399
+
+2
+
+
+
+Sample Output 1
+
+
+
+1099
+
+
+
+Explanation of Sample 1
+
+
+
+Antonio can change the first digit to ‘1’ and change the second digit to ‘0’. It can be proved that 1099 is the minimum possible integer that Antonio can get.
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+
+// Amy has a string S consisting of N lowercase English letters. In one operation she can change any letter of the string to either its preceding letter or its succeeding(following) letter in alphabetical order.
+
+
+
+// Assume the order to be cyclic, so preceding letter of ‘a’ is ‘z’ and succeeding letter of ‘z’ is ‘a’.
+
+
+
+// For Example, if S = “abca”, then she can change the letter ‘c’ to either ‘b’ or ‘d’, in one operation, so string either becomes “abba” or “abda”.
+
+
+
+// Find the minimum number of operations required to make string S, a palindrome. Palindrome is a string that reads backward or forward. For example, strings “aba”, “ooo” are palindrome.
+
+
+
+// You are given T independent test cases.
+
+
+
+// Constraints
+
+
+
+// 1 <= T <= 10
+// 1 <= N <= 105
+
+
+// Input Format
+
+
+
+// First-line contains T.
+
+
+
+// First line of each test case consists of a single integer N.
+
+
+
+// Second line of each test case consists of a string S.
+
+
+
+
+
+// Output Format
+
+
+
+// Print in a newline for each test case a single integer denoting the minimum number of operations required to make string S a palindrome.
+
+
+
+
+
+// Sample Input 1
+
+
+
+// 2
+
+// 3
+
+// aby
+
+// 3
+
+// lol
+
+
+
+// Sample Output 1
+
+
+
+// 2
+
+// 0
+
+
+
+
+
+// Explanation of Sample 1
+
+
+
+// For 1st test case, she can change the first character to ‘z’ and also the last character to ‘z’, in one operation each. So, S = “zbz”
+
+
+
+// For 2nd test case, S is already a palindrome.
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Problem Statement
+
+
+
+Antonio got an array A for his christmas present. Array A consists of N positive integers.
+
+He wants to give a pair of integers from this array to his girlfriend Teena.
+
+Teena likes a pair of integers (a,b) if and only they both are unequal i.e a != b holds.
+
+Now Antonio wants to find the number of pairs he can gift to Teena such that she likes it. Note that an element of the array can be a part of atmost one pair.
+
+As Antonio is weak in arrays he asked you for help. Help Him !
+
+
+
+Input Format
+
+
+
+First line contains a single integer denoting N.
+Next line contains N space separated integers denoting the elements of array A.
+
+
+Output Format
+
+
+
+Print the number of pairs Antonio can gift to Teena such that she likes it.
+
+
+Constraints
+
+
+
+1<=N<=105
+1<=Ai<=109
+
+
+Sample Input 1
+
+
+
+5
+
+2 1 3 2 1
+
+
+
+Sample Output 1
+
+
+
+2
+
+
+
+Explanation of Sample 1
+
+
+
+Antonio can form the pairs as : (1st element, 3rd element), (4th element, 5th element)
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
+Problem Statement
+
+
+
+A number K is called “cool” it can be represented in form of 3*x*y + 2*x + y, where x and y are positive integers.
+
+Amy asked each of her N students to write any number on a paper. You are given an array A of length N, where Ai denotes the number, ith student has written. Help Amy to find how many students wrote a “cool” number.
+
+You are given T independent test cases.
+
+
+
+Constraints
+
+
+
+1 <= T <= 10
+1 <= N <= 40
+1 <= Ai <= 103
+All input values are integers.
+
+
+Input Format
+
+
+
+First-line contains T.
+First line of each test case consists a single integer N.
+Second line of each test case consists of N space separated integers denoting the array A.
+
+
+Output Format
+
+
+
+Print in a newline for each test case a single integer denoting the count of students who wrote a “cool” number.
+
+
+Sample Input 1
+
+
+
+1
+
+5
+
+3 6 2 4 6
+
+
+
+Sample Output 1
+
+
+
+2
+
+
+
+Explanation of Sample 1
+
+
+
+Student numbered 2 and 5 wrote a “cool” number. When x = and y = 1, K = 3*1*1 + 2*1 + 1 = 6 (COOL NUMBER).
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Antonio got an array A consisting of N integers as his christmas present.
+
+Antonio likes an array if and only if the sum of all elements of that array is odd. Like Antonio likes arrays [4,1,4], [2,2,1] etc. but not arrays [4,4], [2,6,2] etc.
+
+Now to make array A of his likeness he can perform the belows operations on it :
+
+Operation 1:
+Remove exactly one element from the array.
+Operation 2:
+Divide every element of the array by 2.
+Given array A, print the minimum number of above operations required to make array A of Antonio’s likeness(i.e. To make the sum of all elements of array A odd).
+
+Input Format
+
+First line contains a single integer denoting N.
+Next line contains N space separated integers denoting the elements of array A.
+Output Format
+
+Print the minimum number of above operations required to make array A of Antonio’s likeness(i.e. To make the sum of all elements of array A odd).
+Constraints
+
+1<=N<=105
+1<=Ai<=109
+Sample Input 1
+
+3
+
+6 4 10
+
+Sample Output 1
+
+2
+
+Explanation of Sample 1
+
+One can perform the operations as :
+
+First perform operation 1 and remove the first element of the array. Array A becomes = [4 10].
+Then perform the second operation and divide each element of the array by 2. A becomes = [2 5].
+Now Antonio likes array [2 5] because the sum of all elements of this array is 7, which is odd.
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+ 
+
+You are given an array A of N elements composed only of 1s and 0s.
+
+There is a machine that does the following operations on the array in one second:
+
+· Swap Ai and Ai+1 for i (1<=i<N) such that Ai = 1 and Ai+1 = 0
+
+For, example, if A = [ 0, 1, 0, 0, 1 ,0, 1, 0] and N= 8 then in one second the machine will convert the array into A = [0, 0, 1, 0, 0 ,1, 0, 1]. (Here i = 2, 5, 7)
+
+Find the minimum time required to sort the array using the machine.
+
+ 
+
+Constraints
+
+ 
+
+1 <= T <= 10
+1 <= N <= 10^5
+0 <= Ai <= 1
+All input values are integers.
+ 
+
+Input Format
+
+ 
+
+First-line contains T.
+First line of each test case consists of a single integer N.
+Second line of each test case consists of N space separated integers denoting the array A.
+ 
+
+Output Format
+
+ 
+
+Print in a newline for each test case a single integer denoting the minimum time required to sort the array using the machine.
+ 
+
+Sample Input 1
+
+ 
+
+2
+
+3
+
+1 0 0
+
+2
+
+0 1
+
+ 
+
+Sample Output 1
+
+ 
+
+2
+
+0
+
+ 
+
+Explanation of Sample 1
+
+ 
+
+For the 1st test case,
+
+A = [1, 0, 0]
+
+In first second machine converts array to A = [ 0, 1, 0]
+
+In next second machine converts array to A = [ 0, 0, 1]
+
+Array has become sorted.
+
+For 2nd test case, array is already sorted.
+--------------------------------------------------------------------------------------------
+
+
+RANGE SUM QUERY 2.0
+
+Problem Statement
+
+Amy has an array A of R-L+1 integers such that A1 = L, A2 = L+1, …. , AR-L+1 = R.
+
+Anne gives her Q queries. Each query consists of two integers X and Y. Anne wants Amy to check if there exists at least one subsequence in A, such that the sum of subsequence lies between X and Y (both inclusive).
+
+You are given T independent test cases.
+
+NOTE: Subsequence of an array can be obtained by erasing some (possibly zero) elements from the array. You can erase any elements, not necessarily going successively. The remaining elements preserve their order.
+
+Constraints
+
+1 <= T <= 3
+1 <= Q <= 10^5
+1 <= L <= R <= 10^9
+1 <= X<= Y <= 10^18
+All input values are integers.
+Input Format
+
+First-line contains T.
+First line of each test case consists of a three space separated integers integer Q, L and R.
+Next Q lines of each test case consists of two space separated integers X and Y.
+Output Format
+
+Print in a newline for each query: 1 if there exists a required subsequence otherwise print 0.
+Sample Input 1
+
+1
+
+2 1 3
+
+6 7
+
+9 9
+
+Sample Output 1
+
+1
+
+0
+
+Explanation of Sample 1
+
+For the first query, subsequence S = { A1, A2, A3} has sum 6 (A1+A2+A3 = 1+2+3 = 6). So, there is one possible subsequence whose sum lies between X = 6 and Y = 7.
+
+For 2nd query, there is no possible subsequence.
+
+ 
+-------------------------------------------------------------------------------------------------

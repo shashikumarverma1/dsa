@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div id="grand">
+
+        grand parent
+        <div id="parent">
+            parent
+
+            <div id="child">
+                child
+            </div>
+        </div>
+    </div>
+    <script >
+        var target =document.getElementById("child")
+target.addEventListener("click",abc,true)
+function abc(){
+    // target.style.background="red"
+    console.log("child")
+}
+
+var parent =document.getElementById("parent")
+parent.addEventListener("click",bc,true)
+function bc(){
+    // parent.style.background="aqua"
+    console.log("parent")
+}
+
+var grand =document.getElementById("grand");
+grand.addEventListener("click",cd,true)
+function cd(){
+    // grand.style.background="red"
+    console.log("gr")
+}
+
+
+    </script>
+</body>
+</html>

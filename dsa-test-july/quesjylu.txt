@@ -1,0 +1,2010 @@
+
+
+Longest Good Array 1.0
+LONGEST GOOD ARRAY 1.0
+
+Problem Statement
+
+
+
+Amy has an array A of length N. We define PK (1<=K<=N) as prefix sum of array up to Kth element, i.e., PK = A1 + A2 + …. + AK.
+
+She calls an array “good”, if for each K (1<=K<=N) PK + Y*AK = X.
+
+For given positive integers X and Y, Amy wants to know the length of the longest good array that exists. If no such good array exists print 0.
+
+You are given T independent test cases.
+
+
+
+Constraints
+
+
+
+1 <= T <= 104
+1 <= X, Y <= 109
+All input values are integers.
+
+
+Input Format
+
+
+
+First-line contains T.
+Next T lines each contains two space separated integers X and Y.
+
+
+Output Format
+
+
+
+Print in a newline for each test case a single integer denoting the length of the longest good array that exists. If no such good array exists print 0.
+
+
+Sample Input 1
+
+
+
+1
+
+4 1
+
+
+
+Sample Output 1
+
+
+
+2
+
+
+
+Explanation of Sample 1
+(
+
+
+A = [2, 1]
+
+P1 = 2, P2 = 3
+
+P1 + 1*A1 = 2 + 2 = 4 and P2 + 1*A2 = 3 + 1 = 4
+
+
+
+Things to Note for the Candidate: You can use your own IDE like Visual Studio Code, Eclipse, or any other IDE that you are comfortable with to build your solution code.
+
+The IDE provided on the platform is purely for submission. Avoid using the IDE for coding out the solution.
+
+Test against any custom input in your own IDE. In the IDE provided on the platform, you cannot pass custom test cases and see the output.
+
+Use standard input and standard output in your program for the IDE to run the test cases smoothly against your code. We are giving a sample problem statement along with a solution that will pass the test cases in the IDE. - Sample Problem Statement (Right Click and Open in New Tab to view.) -->
+
+
+ 
+
+Things to Note for the Candidate: You can use your own IDE like Visual Studio Code, Eclipse, or any other IDE that you are comfortable with to build your solution code.
+
+The IDE provided on the platform is purely for submission. Avoid using the IDE for coding out the solution.
+
+Test against any custom input in your own IDE. In the IDE provided on the platform, you cannot pass custom test cases and see the output.
+
+Use standard input and standard output in your program for the IDE to run the test cases smoothly against your code. We are giving a sample problem statement along with a solution that will pass the test cases in the IDE. - Sample Problem Statement (Right Click and Open in New Tab to view.)
+
+Question Name: Number of Arrays
+
+
+
+Problem Statement
+
+
+
+Alice has an integer Array A of N size. Now he challenges Bob to find the number of arrays B, satisfying the given conditions:
+
+The length of array B = length of array A
+1 <= B[i] <= A[i] (1<= i <= N)
+B[i] != B[j] (1 <= i < j <= N)
+Since the answer can be very large, print the answer modulo 109 + 7.
+
+
+
+Input Format
+
+
+
+First line contains one integer N.
+Second line contains N integers, denoting the array A.
+
+
+Output Format
+
+
+
+Output the number of arrays B modulo 109 + 7.
+
+
+Constraints
+
+
+
+1 <= N <= 2*105
+1 <= A[i] <= 109
+
+
+Sample Input 1
+
+
+
+2
+
+2 3
+
+
+
+Sample Output 1
+
+
+
+4
+
+
+
+Explanation of Sample 1
+
+
+
+The 4 Arrays, are as follows:
+
+B = [1,2]
+
+B = [1,3]
+
+B = [2,3]
+
+B = [2,1]
+
+
+
+Things to Note for the Candidate: You can use your own IDE like Visual Studio Code, Eclipse, or any other IDE that you are comfortable with to build your solution code.
+
+The IDE provided on the platform is purely for submission. Avoid using the IDE for coding out the solution.
+
+Test against any custom input in your own IDE. In the IDE provided on the platform, you cannot pass custom test cases and see the output.
+
+Use standard input and standard output in your program for the IDE to run the test cases smoothly against your code. We are giving a sample problem statement along with a solution that will pass the test cases in the IDE. - Sample Problem Statement (Right Click and Open in New Tab to view.)
+ -->
+Modulating the array
+MODULATING THE ARRAY
+
+
+
+Problem Statement
+
+
+
+Amy has an array A, of N integers. She also has an integer K, such that 0 <= K <= MIN (A1, A2, …, AN). Here MIN denotes the Minimum of the array.
+
+She wants to “modulate” the array with positive integer M. “Modulating” an array with M, for each i between 1 to N, she converts Ai = (Ai – K) % M.
+
+For example, if N = 3, K = 1 and A = [ 2, 5, 3] then after modulating the array with M = 2 it becomes A = [ 1, 0, 0].
+
+She was given Q queries. In each query she has index of the array A, X and Y (1<=X, Y<=N, X may be equal to Y) and is ask to find how many positive values of M exists such that after modulating the array with M, AX becomes equal to AY. If infinite such values of M exists print -1.
+
+Since she is busy in her job interview, she asks you to help her answer the queries.
+
+
+
+NOTE: Queries are independent of each other.
+
+
+
+Constraints
+
+
+
+1 <= N <= 105
+1 <= Ai <= 109
+0 <= K <= MIN (A1, A2, …, AN)
+1 <= Q <= 50
+1 <= X, Y <= N
+All input values are integers.
+
+
+Input Format
+
+
+
+First-line contains three space separated integers N, K and Q.
+Second line contains N space separated integers denoting the array A.
+Next Q lines each contains two space separated integers X and Y.
+
+
+Output Format
+
+Print in a newline for each query a single integer denoting how many positive values of M exists such that after modulating the array with M, AX becomes equal to AY. If infinite such values of M exists print -1.
+
+
+Sample Input 1
+
+
+
+3 1 2
+
+2 5 3
+
+2 3
+
+1 1
+
+
+
+Sample Output 1
+
+
+
+2
+
+-1
+
+
+
+Explanation of Sample 1
+
+
+
+For 1st query M = 1, 2 are possible values. Considering M = 1, A = [ 0, 0, 0], M = 2 is shown in the statement.
+
+
+
+Things to Note for the Candidate: You can use your own IDE like Visual Studio Code, Eclipse, or any other IDE that you are comfortable with to build your solution code.
+
+The IDE provided on the platform is purely for submission. Avoid using the IDE for coding out the solution.
+
+Test against any custom input in your own IDE. In the IDE provided on the platform, you cannot pass custom test cases and see the output.
+
+Use standard input and standard output in your program for the IDE to run the test cases smoothly against your code. We are giving a sample problem statement along with a solution that will pass the test cases in the IDE. - Sample Problem Statement (Right Click and Open in New Tab to view.)
+
+
+Code in your favorite IDE and paste in the above widget
+
+Uniqueness
+
+Problem Statement
+
+ 
+
+You are given an array A, of N integers. In one operation you can:
+
+· Selects the maximum element, MX, of the array, if there are multiple such elements the she can select any one of them.
+
+· Then she removes the selected element and subtracts MX from each of the remaining element of the array.
+
+After each operation size of the array decreases by 1. Find the minimum number of operations, K, required to make all the elements of array unique. Also find the minimum element of the array after exactly K operations.
+
+You are given T independent test cases.
+
+ 
+
+Constraints
+
+ 
+
+1 <= T <= 10
+1 <= N <= 10^5
+-10^9 <= Ai <= 10^9
+All input values are integers.
+ 
+
+Input Format
+
+ 
+
+First-line contains T.
+First line of each test case consists of a single integer N.
+Second line of each test case consists of N space separated integers denoting the array A.
+ 
+
+Output Format
+
+ 
+
+Print in a newline for each test case two space integers denoting the minimum number of operations, K, required to make all the elements of array unique and the minimum element of the array after exactly K operations.
+
+ 
+
+Sample Input 1
+
+ 
+
+2
+
+4
+
+6 -1 2 6
+
+3
+
+-1 2 3
+
+ 
+
+Sample Output 1
+
+ 
+
+1 -7
+
+0 -1
+
+ 
+
+Explanation of Sample 1
+
+ 
+
+For 1st test case, she chooses MX = 6 and, So, array becomes: A = [-1-6, 2-6,6-6] = [ -7, -4, 0]. All the elements of array are unique and minimum element of the array is -7.
+
+In 2nd test case, all elements are already unique.
+
+
+Problem Statement
+
+
+
+Antonio and his girlfriend decided to move their relationship to the next level and bought an array from a nearby arrays shop(name of the shop). As you may have already guessed, both of them are programmers.
+
+They define the value of an array as the number of unique elements it has. Like value of array [1,2,1,2,2,3] = 3 as it has 3 unique elements(1,2 and 3), value of array [1,2,3,4] = 4 and so on.
+
+After a few days, their relationship went through a tough phase and they decided to break up with each other. While breaking up they also decided to break up the bought array among themselves.
+
+To break up the array, they decided to split the elements of the array among themselves such that the total value of the final arrays they receive is as maximum as possible.
+
+For this, they went to a nearby relationship counselor(you). Given the array, Antonio and his girlfriend bought, print the maximum possible total value of the final arrays they can achieve if they divide the elements of the bought array optimally.
+
+Note :
+
+It may be possible that one of them does not receive any element of the bought array.
+
+
+Input Format
+
+
+
+First line contains a single integer denoting N.
+Next line contains N space separated integers denoting the elements of the bought array.
+
+
+Output Format
+
+
+
+Print the maximum possible total value of the final arrays Antonio and his girlfriend can achieve if they divide the elements of the bought array optimally.
+
+
+Constraints
+
+
+
+1<=N<=105
+1<= element of the array<=109
+
+
+Sample Input 1
+
+
+
+6
+
+1 2 1 2 2 3
+
+
+
+Sample Output 1
+
+
+
+5
+
+
+
+Explanation of Sample 1
+
+
+
+They can divide the array elements as :
+
+Antonio receives the 1st, 4th and 5th elements of the array.
+His girlfriend receives rest of the elements i.e. 2nd, 3rd, and 6th.
+Value of array Antonio receives = value of array [1,2,2] = 2
+
+Value of array his girlfriend receives = value of array [2,1,3] = 3
+
+Hence total value = 2+3 = 5. It can be proved that this is the maximum possible value.
+
+
+
+Things to Note for the Candidate: You can use your own IDE like Visual Studio Code, Eclipse, or any other IDE that you are comfortable with to build your solution code.
+
+The IDE provided on the platform is purely for submission. Avoid using the IDE for coding out the solution.
+
+Test against any custom input in your own IDE. In the IDE provided on the platform, you cannot pass custom test cases and see the output.
+
+Use standard input and standard output in your program for the IDE to run the test cases smoothly against your code. We are giving a sample problem statement along with a solution that will pass the test cases in the IDE. - Sample Problem Statement (Right Click and Open in New Tab to view.)
+Cool Evaluation
+COOL EVALUATION
+
+
+
+
+
+Antonio has an array A consisting of N integers.
+
+An array B is a prefix of array A if B can be formed by deleting several(possibly zero but not all) elements from the end of array A. Like for array A = [5,1,4,2], the prefixes are A1..1 = [5], A1..2 = [5,1], A1..3 = [5,1,4], A1..4 = [5,1,4,2].
+
+A prefix is considered good if the sum of its elements is an odd number. Like for A = [5,1,4,2], A1..1 and A1..4 are the good prefixes.
+
+Now, Antonio wants to rearrange the elements of array A such that there are a maximum number of good prefixes in final array A.
+
+Given array A, print the maximum number of good prefixes Antonio can get in final array A.
+
+Input Format
+
+First line c+ontains a single integer denoting N.
+Next line contains N space separated integers denoting the elements of array A.
+Output Format
+
+First print the maximum number of good prefixes Antonio can get in final array A.
+Constraints
+
+1<=N<=105
+1<=Ai<=105
+Sample Input 1
+
+3
+
+4 3 6
+
+Sample Output 1
+
+3
+
+Explanation of Sample 1
+
+Rearrange the elements of array A as [3,4,6]
+
+Sum of elements in prefix A1..1 = 3
+
+Sum of elements in prefix A1..2 = 3+4 = 7
+
+Sum of elements in prefix A1..3 = 3+4+6 = 13
+
+Hence it is possible to rearrange the elements of the given array such that all its three prefixes are good.
+
+
+
+Things to Note for the Candidate:
+
+
+
+﻿ You can use your own IDE like Visual Studio Code, Eclipse, or any other IDE that you are comfortable with to build your solution code.
+
+The IDE provided on the platform is purely for submission. Avoid using the IDE for coding out the solution.
+
+Test against any custom input in your own IDE. In the IDE provided on the platform, you cannot pass custom test cases and see the output.
+
+Use standard input and standard output in your program for the IDE to run the test cases smoothly against your code. We are giving a sample problem statement along with a solution that will pass the test cases in the IDE. - Sample Problem Statement (Right Click and Open in New Tab to view.) -->
+ 
+
+Problem Statement
+
+Given an array A consisting of N integers.
+
+A subsequence is a sequence that can be derived from the given array by deleting zero or more elements(not all) without changing the order of the remaining elements.
+
+A nice subsequence is a subsequence of array A in which the difference between any two elements equals the difference between their original indices in array A.
+
+More formally a subsequence [Ai1 Ai2 Ai3 … AiL] of array A is nice if for any 1<=p,q<=L, Aip-Aiq = ip-iq holds.
+
+Now you have to find the largest possible length of a nice subsequence of array A.
+
+ 
+
+Input Format
+
+First line contains a single integer denoting N.
+Next line contains N space separated integers denoting the elements of array A.
+ 
+
+Output Format
+
+Print the largest possible length of a nice subsequence of array A.
+ 
+
+Constraints
+
+1<=N<=10^5
+1<=Ai<=10^9
+ 
+
+Sample Input 1
+
+6
+
+2 1 4 10 7 7
+
+ 
+
+Sample Output 1
+
+3
+
+ 
+
+Explanation of Sample 1
+
+A possible nice subsequence of length 3 is [A1 A3 A6] = [2 4 7]
+
+ 
+
+Things to Note for the Candidate: You can use your own IDE like Visual Studio Code, Eclipse, or any other IDE that you are comfortable with to build your solution code.
+
+The IDE provided on the platform is purely for submission. Avoid using the IDE for coding out the solution.
+
+Test against any custom input in your own IDE. In the IDE provided on the platform, you cannot pass custom test cases and see the output.
+
+Use standard input and standard output in your program for the IDE to run the test cases smoothly against your code. We are giving a sample problem statement along with a solution that will pass the test cases in the IDE. - Sample Problem Statement (Right Click and Open in New Tab to view.)
+Given array A, help Antonio in finding the number of good elements in the array.
+
+
+
+Input Format
+
+
+
+First line contains a single integer N denoting the size of array A.
+Next line contains N space separated integers denoting the elements of array A.
+
+
+Output Format
+
+
+
+Prin the number of good elements in the array.
+
+
+Constraints
+
+
+
+1<=N<=105
+1<=Ai<=109
+
+
+Sample Input 1
+
+
+
+3
+
+2 2 4
+
+
+
+Sample Output 1
+
+
+
+2
+
+
+
+Explanation of Sample 1
+
+
+
+The first element and second elements are good elements as. 2 divides the first element of the array. 2 divides the second element of the array. And 2 divides the third element of the array.
+
+The third element is not good because 4 is not divisible by 2. -->
+Problem Statement
+
+ 
+
+Every year in School during the new year time, the teacher conducts an event for the students called New year card to increase the friendship among students.
+
+Student roll numbers from 1 to n take part in the event total n number of students. Each Student i is assigned a different Student Si, to which Student i has to make a new year greeting card. Each student is assigned to exactly one other Student, and nobody is assigned to themselves. In other words, all Si must be distinct integers between 1 and n, and for any i, Si≠i must hold.
+
+Every year these assignments were done by the teacher but this year due to the covid-19 situation as the teacher was busy with other School work. All the students have been asked to whom they wish to make a card.
+
+Every student (ith) wishes to make a card for jth student. While i!=j , means a student cannot wish to give himself a card,and every student has to wish for exactly 1 out of the n-1 remaining students.
+
+Find a valid assignment S that maximizes the number of fulfilled wishes of the Students.
+
+ 
+
+Input format
+
+ 
+
+The first line of the input gives the number of test cases T to be answered. First-line integer N size of the array
+
+The next line contains N space-separated integers representing the wishes of the students in order 1 to n.
+
+ 
+
+Output format
+
+ 
+
+In each separate line print the maximum number of students whose wishes will be fulfilled.
+
+ 
+
+Constraints:
+
+ 
+
+1<= T<= 1000
+
+1<= N<= 10^5
+
+1<= Array[i] <= N
+
+Sum of N over all the test cases does not exceed 10^5.
+
+ 
+
+SAMPLE INPUT:
+
+ 
+
+1
+
+7
+
+6 4 6 2 4 5 6
+
+ 
+
+SAMPLE OUTPUT:
+
+ 
+
+4
+
+ 
+
+EXPLANATION:
+
+ 
+
+In this permutation, 4 students will be happy which is the maximum there can be other permutations as well but not with more than 4 students will be happy in any order.
+
+One of the permutations can be [6 ,4 ,7, 2 ,3 ,5 ,1] or [3,4,6,2,1,5,7]
+
+ 
+
+Things to Note for the Candidate: You can use your own IDE like Visual Studio Code, Eclipse, or any other IDE that you are comfortable with to build your solution code.
+
+The IDE provided on the platform is purely for submission. Avoid using the IDE for coding out the solution.
+
+Test against any custom input in your own IDE. In the IDE provided on the platform, you cannot pass custom test cases and see the output.
+
+Use standard input and standard output in your program for the IDE to run the test cases smoothly against your code. We are giving a sample problem statement along with a solution that will pass the test cases in the IDE. - Sample Problem Statement (Right Click and Open in New Tab to view.)
+Question Name: Minimize the integer
+
+
+
+
+
+Things to Note for the Candidate: You can use your own IDE like Visual Studio Code, Eclipse, or any other IDE that you are comfortable with to build your solution code.
+
+The IDE provided on the platform is purely for submission. Avoid using the IDE for coding out the solution.
+
+Test against any custom input in your own IDE. In the IDE provided on the platform, you cannot pass custom test cases and see the output.
+
+Use standard input and standard output in your program for the IDE to run the test cases smoothly against your code. We are giving a sample problem statement along with a solution that will pass the test cases in the IDE. - Sample Problem Statement (Right Click and Open in New Tab to view.)
+
+Question Name: Subarray AND
+
+
+
+Problem Statement
+
+
+
+Consider an array A consisting of N positive integers.
+
+An array B is a subarray of an array A if B can be obtained from A by deletion of several (possibly, zero, or all) elements from the beginning and several (possibly, zero, or all) elements from the end. In particular, an array is a subarray of itself.
+
+A nice array is an array satisfying the below condition :
+
+Bitwise AND of any two elements of the array must be zero.
+More formally for any two integers i and j, Bitwise AND of the ith and jth elements of the array must be zero.
+Given array A, print the largest possible length of a nice subarray of array A.
+
+
+
+Input Format
+
+
+
+First line contains a single integer denoting N.
+Next line contains N space separated integers denoting the elements of array A.
+
+
+Output Format
+
+
+
+Print the largest possible length of a nice subarray of array A.
+
+
+Constraints
+
+
+
+1<=N<=2*105
+0 <= Ai< 220
+
+
+Sample Input 1
+
+
+
+5
+
+6 2 4 1 7
+
+
+
+Sample Output 1
+
+
+
+3
+
+
+
+Explanation of Sample 1
+
+
+
+A possible way to choose a 3 length nice subarray is : A2..4 = [2,4,1]
+
+Here 2 AND 4 = 0, 2 AND 1 = 0, 4 AND 1 = 0, hence it is a nice subarray.
+
+
+
+Things to Note for the Candidate: You can use your own IDE like Visual Studio Code, Eclipse, or any other IDE that you are comfortable with to build your solution code.
+
+The IDE provided on the platform is purely for submission. Avoid using the IDE for coding out the solution.
+
+Test against any custom input in your own IDE. In the IDE provided on the platform, you cannot pass custom test cases and see the output.
+
+Use standard input and standard output in your program for the IDE to run the test cases smoothly against your code. We are giving a sample problem statement along with a solution that will pass the test cases in the IDE. - Sample Problem Statement (Right Click and Open in New Tab to view.)
+
+A>=B
+
+A>=B
+
+ 
+
+Problem Statement
+
+ 
+
+Amy has an array A, of N integers. Initially all the elements of array are 0, i.e., Ai = 0 (1<=i<=N). She also has an array B of N integers.
+
+In one operation she can chose an index K, (1<=K<=N) and increase each element of array A, by 1 except AK. (1-based indexing).
+
+For example, N = 4, A = [0, 0, 0, 0], she can choose K = 2 and increase all the elements of array except A2. So, the array becomes A = [1, 0, 1,1]
+
+Find minimum number of operations required for her to make each element of array A, greater than corresponding element in array B, i.e., for each i (1<=i<=N) make Ai>=Bi.
+
+You are given T independent test cases.
+
+ 
+
+Constraints
+
+ 
+
+1 <= T <= 5
+3 <= N <= 10^5
+1 <= Bi < = 10^9
+All input values are integers.
+ 
+
+Input Format
+
+ 
+
+First-line contains T.
+First line of each test case consists of a single integer N.
+Second line of each test case consists of N space separated integers denoting the array B.
+ 
+
+Output Format
+
+ 
+
+Print in a newline for each test case a single integer denoting the minimum number of operations required for her to make each element of array A, greater than corresponding element in array B, i.e., for each i (1<=i<=N) make Ai>=Bi.
+ 
+
+Sample Input 1
+
+ 
+
+1
+
+3
+
+2 1 1
+
+ 
+
+Sample Output 1
+
+ 
+
+2
+
+ 
+
+Explanation of Sample 1
+
+ 
+
+Initially A = [0, 0, 0]
+
+In 1st operation, she choses K = 2, so A = [1, 0, 1]
+
+In 2nd operation she choses K = 3, so A = [ 2, 1, 1]
+
+Now for each i (1<=i<=3), Ai = Bi
+
+ 
+
+Things to Note for the Candidate: You can use your own IDE like Visual Studio Code, Eclipse, or any other IDE that you are comfortable with to build your solution code.
+
+The IDE provided on the platform is purely for submission. Avoid using the IDE for coding out the solution.
+
+Test against any custom input in your own IDE. In the IDE provided on the platform, you cannot pass custom test cases and see the output.
+
+Use standard input and standard output in your program for the IDE to run the test cases smoothly against your code. We are giving a sample problem statement along with a solution that will pass the test cases in the IDE. - Sample Problem Statement (Right Click and Open in New Tab to view.)
+
+K division
+Question Name: K divison
+
+
+
+Problem Statement
+
+
+
+Klaus thinks that he is a genius. Antonio wants to test Klaus’s IQ for that he asked him a problem.
+
+Given an array A of size N and an integer, K. Antonio asked Klaus to divide array A into K nonempty subsequence. Such that each element of the array should be part of exactly one subsequence. Now the Goodness of this division will be equal to
+
+Example:- For array A {2,4,3,6,1} dividing this array into two subsequence {2,4,1} and {3,6} the the Goodness of this division will be =(4-1)+(6-3)= 6.
+
+Now Antonion wants the goodness of the division to be the maximum possible.
+
+You have to help Klaus So that he remains a genius in front of Antonio.
+
+Your task is to determine the Maximum value of Goodness of the division.
+
+Note:-
+
+A subsequence is a sequence that can be derived from another sequence by deleting some elements without changing the order of the remaining elements.
+
+
+Input Format
+
+
+
+The first line contains two space-separated integers N and K.
+The second line contains N space-separated integers, the array A.
+
+
+Output Format
+
+
+
+Print the maximum value of Goodness of the division.
+
+
+Constraints
+
+
+
+1<=K<=N<=105
+1<=A[i]<=109
+
+
+Sample Input 1
+
+
+
+6 2
+
+2 4 3 6 1 3
+
+
+
+Sample Output 1
+
+
+
+7
+
+
+
+Explanation of Sample 1
+
+
+
+For test case 1
+
+For getting maximum goodness one of the possible division is {2,4,3}, {6,1,3}
+
+And goodness = (4-2)+(6-1)=7
+
+
+
+Things to Note for the Candidate: You can use your own IDE like Visual Studio Code, Eclipse, or any other IDE that you are comfortable with to build your solution code.
+
+The IDE provided on the platform is purely for submission. Avoid using the IDE for coding out the solution.
+
+Test against any custom input in your own IDE. In the IDE provided on the platform, you cannot pass custom test cases and see the output.
+
+Use standard input and standard output in your program for the IDE to run the test cases smoothly against your code. We are giving a sample problem statement along with a solution that will pass the test cases in the IDE. - Sample Problem Statement (Right Click and Open in New Tab to view.)
+
+Modulating the array
+MODULATING THE ARRAY
+
+
+
+Problem Statement
+
+
+
+Amy has an array A, of N integers. She also has an integer K, such that 0 <= K <= MIN (A1, A2, …, AN). Here MIN denotes the Minimum of the array.
+
+She wants to “modulate” the array with positive integer M. “Modulating” an array with M, for each i between 1 to N, she converts Ai = (Ai – K) % M.
+
+For example, if N = 3, K = 1 and A = [ 2, 5, 3] then after modulating the array with M = 2 it becomes A = [ 1, 0, 0].
+
+She was given Q queries. In each query she has index of the array A, X and Y (1<=X, Y<=N, X may be equal to Y) and is ask to find how many positive values of M exists such that after modulating the array with M, AX becomes equal to AY. If infinite such values of M exists print -1.
+
+Since she is busy in her job interview, she asks you to help her answer the queries.
+
+NOTE: Queries are independent of each other.
+
+
+
+Constraints
+
+
+
+1 <= N <= 105
+1 <= Ai <= 109
+0 <= K <= MIN (A1, A2, …, AN)
+1 <= Q <= 50
+1 <= X, Y <= N
+All input values are integers.
+
+
+Input Format
+
+
+
+First-line contains three space separated integers N, K and Q.
+Second line contains N space separated integers denoting the array A.
+Next Q lines each contains two space separated integers X and Y.
+
+
+Output Format
+
+
+
+Print in a newline for each query a single integer denoting how many positive values of M exists such that after modulating the array with M, AX becomes equal to AY. If infinite such values of M exists print -1.
+
+
+Sample Input 1
+
+
+
+3 1 2
+
+2 5 3
+
+2 3
+
+1 1
+
+
+
+Sample Output 1
+
+
+
+2
+
+-1
+
+
+
+Explanation of Sample 1
+
+
+
+For 1st query M = 1, 2 are possible values. Considering M = 1, A = [ 0, 0, 0], M = 2 is shown in the statement.
+
+
+
+Things to Note for the Candidate: You can use your own IDE like Visual Studio Code, Eclipse, or any other IDE that you are comfortable with to build your solution code.
+
+The IDE provided on the platform is purely for submission. Avoid using the IDE for coding out the solution.
+
+Test against any custom input in your own IDE. In the IDE provided on the platform, you cannot pass custom test cases and see the output.
+
+Use standard input and standard output in your program for the IDE to run the test cases smoothly against your code. We are giving a sample problem statement along with a solution that will pass the test cases in the IDE. - Sample Problem Statement (Right Click and Open in New Tab to view.) -->
+Divisibility by K
+DIVISIBILITY BY K
+
+
+
+Problem Statement
+
+
+
+Amy has an array A of N integers.
+
+In one operation she can select a non-empty subsequence of array A and increase or decrease each element of the array by 1.
+
+Find the minimum number of operations she needs to make each element of the array A, divisible by K.
+
+You are given T independent test cases.
+
+
+
+Constraints
+
+
+
+1 <= T <= 10
+1 <= N <= 105
+2 <= K <= 105
+0 <= Ai <= 109
+All input values are integers.
+
+
+Input Format
+
+
+
+First-line contains T.
+First line of each test case consists of two space separated integers N and K.
+Second line of each test case has N space separated integers denoting the array A.
+
+
+Output Format
+
+
+
+Print in a newline for each test case a single integer denoting the minimum number of operations she needs to make each element of the array divisible by K.
+
+
+Sample Input 1
+
+
+
+1
+
+4 3
+
+4 3 6 2
+
+
+
+Sample Output 1
+
+
+
+2
+
+
+
+Explanation of Sample 1
+
+
+
+She selects the subsequence, {A1, A3} and decrease each by 1. So, A = [3, 3, 5, 2]
+
+Then, she selects the subsequence, {A3, A4} and increase each by 1. So, A = [3, 3, 6, 3]
+
+Now each element of the array is divisible by 3.
+
+
+
+Things to Note for the Candidate: You can use your own IDE like Visual Studio Code, Eclipse, or any other IDE that you are comfortable with to build your solution code.
+
+The IDE provided on the platform is purely for submission. Avoid using the IDE for coding out the solution.
+
+Test against any custom input in your own IDE. In the IDE provided on the platform, you cannot pass custom test cases and see the output.
+
+Use standard input and standard output in your program for the IDE to run the test cases smoothly against your code. We are giving a sample problem statement along with a solution that will pass the test cases in the IDE. - Sample Problem Statement (Right Click and Open in New Tab to view.)
+
+Antonio's Store
+Question Name: Antonio’s Store
+
+
+
+Problem Statement
+
+
+
+Antonio is a very successful businessman. Recently he bought a basketball Store. In the basketball Store, there are N containers, where each container can store at most K basketballs.
+
+Initially ith. container contains A[i] balls. Now he bought M more basketballs from somewhere and wants to store them in these containers. He can store the jth ball (1<=j<=M) in any container. He cannot remove initial balls from the container.
+
+Your task is to determine the minimum capacity K such he can store all the additional M balls into the containers.
+
+
+
+Input Format
+
+
+
+The first line contains two space-separated integers N and M.
+The second line contains N space-separated integers, the array A.
+
+
+Output Format
+
+
+
+Print the minimum capacity K for that Antonio can store all the additional M balls into the containers
+
+
+Constraints
+
+
+
+1<=N<=105
+1<=A[i],M<=109.
+
+
+Sample Input 1
+
+
+
+3 4
+
+1 2 3
+
+
+
+Sample Output 1
+
+
+
+4
+
+
+
+Explanation of Sample 1
+
+
+
+For the given test case, we can set K=4 and then
+
+Add 2 more basketballs in the first.
+Add 2 more basketballs in the second
+
+
+Things to Note for the Candidate: You can use your own IDE like Visual Studio Code, Eclipse, or any other IDE that you are comfortable with to build your solution code.
+
+The IDE provided on the platform is purely for submission. Avoid using the IDE for coding out the solution.
+
+Test against any custom input in your own IDE. In the IDE provided on the platform, you cannot pass custom test cases and see the output.
+
+Use standard input and standard output in your program for the IDE to run the test cases smoothly against your code. We are giving a sample problem statement along with a solution that will pass the test cases in the IDE. - Sample Problem Statement (Right Click and Open in New Tab to view.)
+
+Superior minions
+Question Name: Superior Minions
+
+
+
+Problem Statement
+
+
+
+There are N minions standing in a line. There is also a string S of length N-1 consisting only of ‘<’ and ‘>’ characters.
+
+If the ith character (for each 1<=i<N) of string S is ‘>’, this means the ith minion is superior to the (i+1)th minions, and (i+1)th minion is inferior to the ith minion.
+
+Whereas if the ith character (for each 1<=i<N) of string S is ‘<’, this means the ith minion is inferior to the (i+1)th minion and (i+1)th minion is superior to the ith minion.
+
+Now you have got the job of distributing candies to the minions. Each minion must get atleast one candy and If a superior minion does not get strictly more candies than an inferior minion then the superior will beat the inferior minion to death. You don’t want this to happen and hence want to distribute the candies such that :
+
+Each minion gets atleast one candy.
+A superior minion gets strictly more candies than an inferior minion.
+To accomplish this task you went to the candy shop to buy candies. Print the minimum number of candies you need to buy to accomplish the task.
+
+
+
+Input Format
+
+
+
+First line of input contains string S.
+
+
+Output Format
+
+
+
+Print the minimum number of candies you need to buy to accomplish the task.
+
+
+Constraints
+
+
+
+2<=N<=5*105
+
+
+Sample Input 1
+
+
+
+<>>
+
+
+
+Sample Output 1
+
+
+
+7
+
+
+
+Explanation of Sample 1
+
+
+
+Distribute the candies as : First minion gets 1 candy, second minions gets 3 candies, third minion gets 2 candy, and fourth minion gets 1 candy.
+
+Lets represent the distribution by an array = [1,3,2,1].
+
+Here, minion 2 is superior to minon 1 and hence has got more candies than minion 1.
+
+minion 2 is superior to minon 3 and hence has got more candies than minion 1.
+
+minion 3 is superior to minon 4 and hence has got more candies than minion 4.
+
+
+
+
+Bootcamp
+
+Problem Statement
+
+ 
+
+You are given N students and an array of size N. The knowledge of the i-th student is a[i]. You are also given an integer X. You want to create some boot camps to teach them about coding. Since you want to make the maximum profit, you have to create the maximum number of boot camps possible. To create a bootcamp the product of the number of students in the bootcamp and the student with the least knowledge should be greater than twice of X. Also a student can be a member of only one bootcamp and a few students might not be a part of any bootcamp.
+
+Count the maximum number of boot camps possible.
+
+ 
+
+Constraints
+
+ 
+
+All the input values are integers
+1<=t<=100
+1<=N<=10^5
+1<=X<=10^9
+1<=a[i]<=10^8
+ 
+
+Input :
+
+ 
+
+The first contains the integer t the number of test cases.
+
+The first line of each test case contains N and X where N is the number of students and X is an integer
+
+The second line of each test case contains the N elements of the array
+
+ 
+
+Output :
+
+ 
+
+Print the maximum number of boot camps you can make.
+
+ 
+
+Sample Input :
+
+ 
+
+2
+
+10 6
+
+7 1 8 2 7 6 4 1 9 1
+
+4 7
+
+9 7 4 7
+
+ 
+
+Sample Output :
+
+ 
+
+2
+
+1
+
+ 
+
+Sample Explanation :
+
+ 
+
+In the first test case you can make first boot camp with 1st student and 3rd student and the second boot camp with the 5th and 9th student
+
+In the second test case you can make a bootcamp with all the four students
+
+ 
+
+Strings and Characters
+Question Name: Strings and Characters
+
+
+
+Problem Statement
+
+
+
+Alex has a string S of length N (assume one-based indexing for the entire problem).
+
+Now Bob makes an array A of N strings each of length N-1 by deleting the ith character from the string S for all 1<=i<=N.
+
+Example: for string S = “abcd”, array A looks like: A = [ “bcd” , “acd” , “abd” , “abc” ].
+
+Now Alex wants to know number of pair of integers (i,j) such that:
+
+1 <= i < j <= N, and
+A[i] = A[j]
+
+
+Input Format
+
+
+
+First line contains one integer representing N (length of the string).
+Second line contains the string S.
+
+
+Output Format
+
+
+
+Output the number of pairs of integers (i,j), satisfying the above conditions.
+
+
+Constraints
+
+
+
+2<=N<=3*105
+String S consists of only lowercase English letters.
+
+
+Sample Input 1
+
+
+
+6
+
+abbacc
+
+
+
+Sample Output 1
+
+
+
+2
+
+
+
+Explanation of Sample 1
+
+
+
+String S = “abbacc”.
+
+Hence array A = [“bbacc” , “abacc” , “abacc” , “abbcc” , “abbac” , “abbac” ].
+
+So the pairs (i,j), satisfying the conditions are:
+
+(2,3), and (5,6).
+
+Therefore, 2 is the answer.
+
+
+Path Queries
+
+PATH QUERIES
+
+ 
+
+Problem Statement
+
+ 
+
+Amy went to a state which has N cities, numbered from 1 to N. There is bidirectional road connecting city X and Y if: X – Y >= K.
+
+She has Q queries. In each query she has two integers A and B and she wants to know if there exists a path from city A to city B.
+
+Help her by answering her queries. You are given T independent test cases.
+
+ 
+
+Constraints
+
+ 
+
+1 <= T <= 10
+1 <= N <= 10^7
+1 <= Q <= 10^5
+1 <= K <= N
+All input values are integers.
+ 
+
+Input Format
+
+ 
+
+First-line contains T.
+First line of each test case consists of three space separated integers N, K and Q.
+Next Q, lines of each test case consist of two space separated integers A and B. (1<=A, B<=N)
+ 
+
+Output Format
+
+ 
+
+For each test case, print in a newline for each query: 1 if a path exits from city A to city B otherwise print 0.
+ 
+
+Sample Input 1
+
+ 
+
+1
+
+3 2 2
+
+1 2
+
+1 3
+
+ 
+
+Sample Output 1
+
+ 
+
+0
+
+1
+
+ 
+
+Explanation of Sample 1
+
+ 
+
+The state has only one road, i.e., between city 1 and city 3 as if X = 3, Y = 1, then 3 – 1 > = 2 (K=2 here).
+
+ 
+
+
+Path Queries
+PATH QUERIES
+
+
+
+Problem Statement
+
+
+
+Amy went to a state which has N cities, numbered from 1 to N. There is bidirectional road connecting city X and Y if: X – Y >= K.
+
+She has Q queries. In each query she has two integers A and B and she wants to know if there exists a path from city A to city B.
+
+Help her by answering her queries. You are given T independent test cases.
+
+
+
+Constraints
+
+
+
+1 <= T <= 10
+1 <= N <= 107
+1 <= Q <= 105
+1 <= K <= N
+All input values are integers.
+Input Format
+
+First-line contains T.
+First line of each test case consists of three space separated integers N, K and Q.
+Next Q, lines of each test case consist of two space separated integers A and B. (1<=A, B<=N)
+Output Format
+
+For each test case, print in a newline for each query: 1 if a path exits from city A to city B otherwise print 0.
+
+
+Sample Input 1
+
+
+
+1
+
+3 2 2
+
+1 2
+
+1 3
+
+
+
+Sample Output 1
+
+
+
+0
+
+1
+
+
+
+Explanation of Sample 1
+
+
+
+The state has only one road, i.e., between city 1 and city 3 as if X = 3, Y = 1, then 3 – 1 > = 2 (K=2 here).
+
+
+
+Things to Note for the Candidate :You can use your own IDE like Visual Studio Code, Eclipse, or any other IDE that you are comfortable with to build your solution code.
+
+The IDE provided on the platform is purely for submission. Avoid using the IDE for coding out the solution.
+
+Test against any custom input in your own IDE. In the IDE provided on the platform, you cannot pass custom test cases and see the output.
+
+Use standard input and standard output in your program for the IDE to run the test cases smoothly against your code. We are giving a sample problem statement along with a solution that will pass the test cases in the IDE. - Sample Problem Statement (Right Click and Open in New Tab to view.)
+Minimax
+MINIMAX
+
+
+
+Problem Statement
+
+
+
+You are given an array A, of N positive distinct integers. You can delete several elements of the array (possibly zero). You cannot reorder the elements. Let B denote the array of size K, that we obtain after deleting several elements of array A.
+
+You goal is to maximise the sum of consecutive absolute difference of elements of array B, S.
+
+S = |B1 – B2| + |B2 – B3| + ….. + |BK-1 – BK|
+
+For several such array B, find the one with the minimum value of K. Print the maximum value of S and its corresponding minimum value of K.
+
+You are given T independent test cases.
+
+
+
+Constraints
+
+
+
+1 <= T <= 10
+2 <= N <= 105
+1 <= Ai <= N
+All input values are integers.
+
+
+Input Format
+
+
+
+First-line contains T.
+First line of each test case consists of a single integer N.
+Second line of each test case consists of N space separated integers denoting array A.
+
+
+Output Format
+
+
+
+Print in a newline for each test case two space separated integers denoting the maximum value S and its corresponding minimum value of K.
+
+
+Sample Input 1
+
+
+
+2
+
+3
+
+1 3 2
+
+3
+
+1 2 3
+
+
+
+Sample Output 1
+
+
+
+3 3
+
+2 2
+
+
+
+Explanation of Sample 1
+
+
+
+For 1st test case, K=3 and B = [1, 3, 2] (No element is deleted from A). So, S = |1-3|+|3-2| = 2+1=3.
+
+For 2nd test case, K=2, and B = [1, 3], (We deleted the 2nd element). So, S = |1-3|=2.
+
+
+
+Modulating the array
+MODULATING THE ARRAY
+
+
+
+Problem Statement
+
+
+
+Amy has an array A, of N integers. She also has an integer K, such that 0 <= K <= MIN (A1, A2, …, AN). Here MIN denotes the Minimum of the array.
+
+She wants to “modulate” the array with positive integer M. “Modulating” an array with M, for each i between 1 to N, she converts Ai = (Ai – K) % M.
+
+For example, if N = 3, K = 1 and A = [ 2, 5, 3] then after modulating the array with M = 2 it becomes A = [ 1, 0, 0].
+
+She was given Q queries. In each query she has index of the array A, X and Y (1<=X, Y<=N, X may be equal to Y) and is ask to find how many positive values of M exists such that after modulating the array with M, AX becomes equal to AY. If infinite such values of M exists print -1.
+
+Since she is busy in her job interview, she asks you to help her answer the queries.
+
+
+
+NOTE: Queries are independent of each other.
+
+
+
+Constraints
+
+
+
+1 <= N <= 105
+1 <= Ai <= 109
+0 <= K <= MIN (A1, A2, …, AN)
+1 <= Q <= 50
+1 <= X, Y <= N
+All input values are integers.
+
+
+Input Format
+
+
+
+First-line contains three space separated integers N, K and Q.
+Second line contains N space separated integers denoting the array A.
+Next Q lines each contains two space separated integers X and Y.
+
+
+Output Format
+
+Print in a newline for each query a single integer denoting how many positive values of M exists such that after modulating the array with M, AX becomes equal to AY. If infinite such values of M exists print -1.
+
+
+Sample Input 1
+
+
+
+3 1 2
+
+2 5 3
+
+2 3
+
+1 1
+
+
+
+Sample Output 1
+
+
+
+2
+
+-1
+
+
+
+Explanation of Sample 1
+
+
+
+For 1st query M = 1, 2 are possible values. Considering M = 1, A = [ 0, 0, 0], M = 2 is shown in the statement.
+
+
+
+Things to Note for the Candidate: You can use your own IDE like Visual Studio Code, Eclipse, or any other IDE that you are comfortable with to build your solution code.
+
+The IDE provided on the platform is purely for submission. Avoid using the IDE for coding out the solution.
+
+Test against any custom input in your own IDE. In the IDE provided on the platform, you cannot pass custom test cases and see the output.
+
+Use standard input and standard output in your program for the IDE to run the test cases smoothly against your code. We are giving a sample problem statement along with a solution that will pass the test cases in the IDE. - Sample Problem Statement (Right Click and Open in New Tab to view.)
+You are given a circular binary array Arr of size N (A circular array is an array where we consider the first and last element to be adjacent).
+
+In one operation you can choose an index i(1<=i<=N) and flip the number at index i, i.e.if Arr[i]=1 you can make it 0 and vice versa
+
+You are given two integers O and Z.Your aim is to make a subarray of size O+Z such that the first O digits of the subarray are 1s and the last Z digits of the subarray are 0s
+
+What is the minimum number of operations required to do so?
+
+Note: A subarray is a slice from a contiguous array (i.e., occupy consecutive positions) and inherently maintains the order of elements.
+
+
+
+Input Format
+
+
+
+The first line of the input contains 3 space-separated integers denoting N O and Z respectively
+
+The next line contains N space separated integers denoting Arr[i](1<=i<=N)
+
+
+
+Output Format
+
+
+
+Print an integer denoting the minimum number of operations required to make a subarray of size O+Z such that the first O digits of the subarray are 1s and the last Z digits of the subarray are 0s
+
+
+
+Constraints
+
+
+
+1<=N<=10^5
+
+0<=O,Z<=N
+
+1<=O+Z<=N
+
+0<=Arr[i](1<=i<=N)<=1
+
+
+
+Sample Input
+
+
+
+4 1 1
+
+1 1 1 1
+
+1
+
+
+
+Sample Output
+
+
+
+1
+
+
+
+Sample Explanation
+
+
+
+One of the solutions is to flip the digit at index 2 resulting in our array as 1 0 1 1 and 1 0(index 1 and 2) will be our required subarray
+
+Question Name: Positive Negative
+
+Problem Statement
+
+Alex has an array A of N non-zero integers.
+
+Let’s define X = number of pair of integers (i,j), i<=j such that:
+
+A[i] * A[i+1] * ….. * A[j] is negative.
+and let’s say Y = number of pair of integers (i,j), i<=j such that:
+
+A[i] * A[i+1] * …… * A[j] is positive.
+Help Alex to find X and Y.
+
+Input Format
+
+First line contains one integer N, representing the size of the array.
+Second line contains the array A.
+Output Format
+
+Output X and Y in space-separated format.
+Constraints
+
+1 <= N <=2*105
+-109 <= A[i] <= 109 (A[i] != 0)
+Sample Input 1
+
+5
+
+2 -2 1 4 -2
+
+Sample Output 1
+
+9 6
+
+Explanation of Sample 1
+
+Following are the pair of integers (i,j) which constitute under X (assume one-based indexing):
+
+(1,2)
+(1,3)
+(1,4)
+(2,2)
+(2,3)
+(2,4)
+(3,5)
+(4,5)
+(5,5)
+Following are the pair of integers (i,j) which constitute under Y (assume one-based indexing):
+
+(1,1)
+(1,5)
+(2,5)
+(3,3)
+(3,4)
+(4,4)
+
+
+
+
+// Perfectly Filled Buckets
+
+
+// Problem Statement
+
+
+
+// Amy has an array A of N prime numbers. She needs to fill K buckets with the integers of the arrays. Initially all the buckets are empty.
+
+
+
+// Buckets are numbered from 1 to N.
+
+
+
+// Each element of the array can be put in at most one bucket. Also, each bucket must contain at least one integer.
+
+
+
+// A bucket is considered “perfectly-filled”, if after removing at most one integer from the bucket, the product of the resultant integers in the bucket becomes a perfect square or the bucket will become empty.
+
+
+
+// For example, bucket with integers: {2, 2, 5} is considered as “perfectly-filled” as after removing integer 5, the product of the resultant integers will become perfect square.
+
+
+
+// Buckets: {3}, {2, 2}, {5, 3, 3} are “perfectly -filled”.
+
+
+
+// Amy filled all the K buckets “perfectly”.
+
+
+
+// Bi denotes the number of integers in the bucket numbered i.
+
+
+
+// She wants to maximize the value of M, M = MIN (B1, B2, …, BK).
+
+
+
+// Help to find the maximum possible value of M, if she fills the buckets optimally.
+
+
+
+// You are given T independent test cases.
+
+
+
+// Constraints
+
+
+
+// 1 <= T <= 5
+// 1 <= K <= N <= 105
+// 2 <= Ai <= 120
+// Ai is prime number.
+// All input values are integers.
+
+
+// Input Format
+
+
+
+// First-line contains T.
+// First line of each test case consists of two space separated integers N and K.
+// Second line of each test case consists of N space separated integers denoting the array A.
+
+
+// Output Format
+
+
+
+// Print in a newline for each test case a single integer denoting the maximum possible value of M.
+
+
+// Sample Input 1
+
+
+
+// 1
+
+// 5 2
+
+// 3 2 5 3 2
+
+
+
+// Sample Output 1
+
+
+
+// 2
+
+
+
+// Explanation of Sample 1
+
+
+
+// B1 = 3, bucket-1 contains {3, 5,3}
+
+// B2 = 2, bucket-1 contains {2, 2}
+
+// M = MIN (B1, B2) = 2
+
